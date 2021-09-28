@@ -79,7 +79,7 @@ button {
 
 - do some simple JS to show where to debug
 
-```jsx
+```js
 document.getElementById('btn').addEventListener('click', () => {
 	chrome.runtime.sendMessage({interval:document.getElementById('text').value}, function(response) {
 		console.log(response, 'popup');
@@ -107,7 +107,7 @@ document.getElementById('btn').addEventListener('click', () => {
 
 ## Step 10. Add message listeners in background
 
-```jsx
+```js
 let id = null;
 chrome.runtime.onMessage.addListener(
   function(msg, sender, sendResponse) {
@@ -157,7 +157,7 @@ function msgContentScript(msg) {
 
 ## Step 13. Add message listener to content script
 
-```jsx
+```js
 let id = null;
 console.log('hi content');
 chrome.runtime.onMessage.addListener(
@@ -182,7 +182,7 @@ function addDiv() {
 
 ## Step 14. Add CSS as well for content script
 
-```jsx
+```css
 .overlayFromExtension{
   color: #ccc;
   text-transform: capitalize;
