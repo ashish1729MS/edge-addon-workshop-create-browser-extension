@@ -43,8 +43,8 @@
 
 ```json
 "browser_action": {
-		"default_popup": "popup.html"
-	}
+	"default_popup": "popup.html"
+}
 ```
 
 ## Step 6. Copy paste this CSS
