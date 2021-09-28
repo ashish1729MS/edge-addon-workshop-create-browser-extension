@@ -136,6 +136,7 @@ function msgContentScript(msg) {
 
 - explain in parts when by first adding listener and then adding message passing to content
 - link to documentation
+- if tabs doesn't work you might need permission to access
 
 ## Step 11. Add a content script
 
@@ -205,6 +206,6 @@ function addDiv() {
 
 - chrome://extensions/
 
-## Tell about options page
-
 ## ideas for extensions
+
+## permissions intro
