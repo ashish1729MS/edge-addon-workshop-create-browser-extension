@@ -161,8 +161,6 @@ let id = null;
 console.log('hi content');
 chrome.runtime.onMessage.addListener(
   function(msg) {
-    
-
     addDiv();
 
   }
@@ -171,11 +169,12 @@ chrome.runtime.onMessage.addListener(
 function addDiv() {
   const div = document.createElement('div');
   div.classList.add('overlayFromExtension');
-  div.innerText = "hello from extension";
+  div.innerText = "Look away from your screen!!";
   document.body.appendChild(div);
 
   setTimeout(() => div.remove(), 2000);
 }
+
 ```
 
 - add new tab to see it works there as well.
@@ -184,7 +183,8 @@ function addDiv() {
 
 ```jsx
 .overlayFromExtension{
-  color: red;
+  color: #ccc;
+  text-transform: capitalize;
   position: fixed;
   top: 0;
   bottom: 0;
