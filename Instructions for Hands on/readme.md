@@ -81,7 +81,7 @@ button {
 
 ```jsx
 document.getElementById('btn').addEventListener('click', () => {
-	chrome.runtime.sendMessage({greeting:document.getElementById('text').value}, function(response) {
+	chrome.runtime.sendMessage({interval:document.getElementById('text').value}, function(response) {
 		console.log(response, 'popup');
 	});
 })
@@ -114,7 +114,7 @@ chrome.runtime.onMessage.addListener(
     console.log(msg, 'bg');
 
     
-    let interval = +msg.greeting;
+    let interval = +msg.interval;
     if (isNaN(interval)) interval = 10000;
     else interval *= 1000;
     
@@ -129,7 +129,7 @@ chrome.runtime.onMessage.addListener(
 
 function msgContentScript(msg) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, {greeting: msg.greeting});
+    chrome.tabs.sendMessage(tabs[0].id, {interval: msg.interval});
   });
 }
 ```
