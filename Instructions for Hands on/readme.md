@@ -8,7 +8,7 @@
 
 <br />
 
-## Step 2. Create a manifest file ( manifest.json)
+## Step 2. Create a manifest file inside the folder ( manifest.json)
 
 ```json
 {
@@ -25,6 +25,8 @@
 
 - open `edge://extensions/` in your browsers
 - DEVELOPER MODE has to be enabled to be able to upload the extension
+![Turn on Developer mode](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/media/part1-developermode-toggle.png)
+- Load the extension into the browser by clicking **Load Unpacked** button then selecting the folder that you just created
 - see the extension next to address bar and pin it.
 
 <br />
