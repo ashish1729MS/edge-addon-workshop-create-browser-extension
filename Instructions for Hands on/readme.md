@@ -15,7 +15,7 @@
 
 ## Step 3. Add extension to browser ( both chrome and edge )
 
-- open chrome://extensions/ in your browsers [TODO edge ]
+- open edge://extensions/ in your browsers
 - DEVELOPER MODE has to be enabled to be able to upload the extension
 - see the extension next to address bar and pin it.
 
@@ -203,6 +203,8 @@ function addDiv() {
 
 ## Demo installing and running in edge
 
-- edge://extensions/
+- chrome://extensions/
 
 ## Tell about options page
+
+## ideas for extensions
