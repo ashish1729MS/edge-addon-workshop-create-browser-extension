@@ -199,7 +199,7 @@ function addDiv() {
 }
 ```
 
-## Step 16. Disable extension in the add to avoid inject content script everywhere.
+## Step 16. Disable extension in the end to avoid inject content script everywhere.
 
 ## Demo installing and running in edge
 
