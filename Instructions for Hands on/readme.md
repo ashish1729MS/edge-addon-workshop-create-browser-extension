@@ -1,6 +1,12 @@
 # Extension hands-on
 
+<br />
+<br />
+
+
 ## Step 1. Create a folder [ and remember where it is 👮 ]
+
+<br />
 
 ## Step 2. Create a manifest file ( manifest.json)
 
@@ -13,11 +19,15 @@
 }
 ```
 
+<br />
+
 ## Step 3. Add extension to browser ( both chrome and edge )
 
-- open edge://extensions/ in your browsers
+- open `edge://extensions/` in your browsers
 - DEVELOPER MODE has to be enabled to be able to upload the extension
 - see the extension next to address bar and pin it.
+
+<br />
 
 ## Step 4. Create popup page
 
@@ -39,6 +49,8 @@
 </html>
 ```
 
+<br />
+
 ## Step 5. Add popup page in manifest
 
 ```json
@@ -46,6 +58,9 @@
 	"default_popup": "popup.html"
 }
 ```
+
+
+<br />
 
 ## Step 6. Copy paste this CSS
 
@@ -75,6 +90,8 @@ button {
 }
 ```
 
+<br />
+
 ## Step 7. Copy this javascript and debug the popup script
 
 - do some simple JS to show where to debug
@@ -90,9 +107,14 @@ document.getElementById('btn').addEventListener('click', () => {
 - link to send message documentation to understand what it does
 - add `popup.js` link in html
 
+<br />
+
 ## Step 8. Background script
 
 - dummy script to debug background
+
+
+<br />
 
 ## Step 9. Add background script to manifest
 
@@ -104,6 +126,8 @@ document.getElementById('btn').addEventListener('click', () => {
 ```
 
 - explain `persistent` keyword
+
+<br />
 
 ## Step 10. Add message listeners in background
 
@@ -138,10 +162,16 @@ function msgContentScript(msg) {
 - link to documentation
 - if tabs doesn't work you might need permission to access
 
+
+<br />
+
 ## Step 11. Add a content script
 
 - dummy content script and **debug** it
 - refresh extension to update css changes
+
+<br />
+
 
 ## Step 12. Add content script in manifest
 
@@ -154,6 +184,8 @@ function msgContentScript(msg) {
     }
   ]
 ```
+
+<br />
 
 ## Step 13. Add message listener to content script
 
@@ -180,6 +212,9 @@ function addDiv() {
 
 - add new tab to see it works there as well.
 
+<br />
+
+
 ## Step 14. Add CSS as well for content script
 
 ```css
@@ -199,13 +234,24 @@ function addDiv() {
   z-index: 9999;
 }
 ```
+<br />
+
 
 ## Step 16. Disable extension in the end to avoid inject content script everywhere.
+
+<br />
 
 ## Demo installing and running in edge
 
 - chrome://extensions/
 
+
+<br />
+
 ## ideas for extensions
 
+<br />
+
 ## permissions intro
+
+<br />
